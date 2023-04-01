@@ -15,7 +15,7 @@ clone the repo :
 git clone https://github.com/judemont/typing-bot
 cd typing-bot
 ```
- If you are running linux replace `python3` with `python`.
+ If you are running linux replace `python` with `python3`.
 
 Download and install selenium :
 ```bash
