@@ -1,0 +1,24 @@
+{
+    "url": "https://10fastfingers.com/typing-test/english",
+    "buttons-to-click": 
+    [
+        {
+            "get-with": "id",
+            "value": "CybotCookiebotDialogBodyButtonDecline"
+        }
+        
+    ],
+    "word-input": 
+    {
+        "get-with": "id",
+        "value": "inputfield"
+    },
+    "word-to-write":
+    {
+        "get-with": "class",
+        "value": "highlight"
+    }
+    
+
+
+}
