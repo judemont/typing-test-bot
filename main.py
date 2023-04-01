@@ -21,7 +21,7 @@ def get_locator(by_string):
 def load_website_data(website):
     """Loads website data from a JSON file."""
     base_dir = os.path.dirname(os.path.realpath(__file__))
-    websites_dir = os.path.join(base_dir, "websites")
+    websites_dir = os.path.join(base_dir, "typing-test-websites")
     file_path = os.path.join(websites_dir, website + ".json")
 
     with open(file_path, "r") as f:
@@ -61,7 +61,7 @@ def write_words(driver, word_input_info, word_to_write_info):
             break
 
 def print_help():
-    print("Usage: typing-bot [website]")
+    print("Usage: python main.py [website]")
     print("--help or -h : print this help")
     exit()
 def verify_arguments(args):
