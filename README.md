@@ -42,13 +42,13 @@ To add typing test website you :
         }
         
     ],
-    "word-input": //The input or the bot must write the words
+    "input": //The input or the bot must write the words or the letter. If there is no input you can use 'body' for value.
     {
-        "css-selector": "The css selector of the button. Example: '.acoolclass'" 
+        "css-selector": "The css selector of the input. Example: '.acoolclass'" 
     },
     "word-to-write": //The word that the bot should write
     {
-        "css-selector": "The css selector of the button. Example: '.acoolclass'" 
+        "css-selector": "The css selector of the element. Example: '.acoolclass'" 
     }, 
     "next-key": "The next key to press after each words or letters. Example: ' ' or '\n'"
 

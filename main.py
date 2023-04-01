@@ -79,8 +79,8 @@ def main():
     url = website_data["url"]
     next_key = website_data["next-key"]
     buttons_to_click = website_data["buttons-to-click"]
-    word_input_info = website_data["word-input"]
-    word_to_write_info = website_data["word-to-write"]
+    word_input_info = website_data["input"]
+    word_to_write_info = website_data["to-write"]
 
     chrome_options = webdriver.ChromeOptions() 
     chrome_options.add_experimental_option("detach", True)

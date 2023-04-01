@@ -7,11 +7,11 @@
         }
         
     ],
-    "word-input": 
+    "input": 
     {
         "css-selector": "body"
     },
-    "word-to-write":
+    "to-write":
     {
         "css-selector": ".is-active"
     },
