@@ -12,8 +12,8 @@ He writes at more than 400 words per minute !
 ## Usage :
 clone the repo :
 ```bash
-git clone https://github.com/judemont/typing-bot
-cd typing-bot
+git clone https://github.com/judemont/typing-test-bot
+cd typing-test-bot
 ```
  If you are running linux replace `python` with `python3`.
 
