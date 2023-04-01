@@ -24,6 +24,7 @@ python main.py [website]
 python main.py 10fastfingers
 ```
 ## Contribute :
+<b>The contributions are very appreciated</b>
 ### Add typing test website :
 To add typing test website you :
 - Creat a new json file in the `typing-test-websites` folder. 
