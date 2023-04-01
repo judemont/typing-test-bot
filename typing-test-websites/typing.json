@@ -1,0 +1,22 @@
+{
+    "url": "https://www.typing.com/student/typing-test/1-minute",
+    "buttons-to-click": 
+    [
+        {
+            "css-selector": ".js-continue-button"  
+        }
+        
+    ],
+    "word-input": 
+    {
+        "css-selector": "body"
+    },
+    "word-to-write":
+    {
+        "css-selector": ".is-active"
+    },
+    "next-key": ""
+    
+
+
+}

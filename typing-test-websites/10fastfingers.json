@@ -3,21 +3,20 @@
     "buttons-to-click": 
     [
         {
-            "get-with": "id",
-            "value": "CybotCookiebotDialogBodyButtonDecline"
+            "css-selector": "#CybotCookiebotDialogBodyButtonDecline"
         }
         
     ],
     "word-input": 
     {
-        "get-with": "id",
-        "value": "inputfield"
+        "css-selector": "#inputfield"
     },
     "word-to-write":
     {
-        "get-with": "class",
-        "value": "highlight"
-    }
+        "css-selector": ".highlight"
+    },
+    "next-key": " "
+
     
 
 

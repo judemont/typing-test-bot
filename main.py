@@ -1,21 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 import time
 import json
 import os
 import sys
 
-AVALAIBLES_WEBSITES = ["10fastfingers"]
-
-def get_locator(by_string):
-    """Returns the By object based on the string representation."""
-    if by_string == "id":
-        return By.ID
-    elif by_string == "class":
-        return By.CLASS_NAME
-    else:
-        raise ValueError("Unknown locator type: %s" % by_string)
+AVALAIBLES_WEBSITES = ["10fastfingers", "typing"]
 
 
 def load_website_data(website):
@@ -33,32 +25,32 @@ def load_website_data(website):
 def click_buttons(driver, buttons_to_click):
     """Clicks the buttons specified in the buttons_to_click list."""
     for button_info in buttons_to_click:
-        locator_type = button_info["get-with"]
-        locator_value = button_info["value"]
-
-        locator = get_locator(locator_type)
-        button = driver.find_element(locator, locator_value)
+        
+        locator = button_info["css-selector"]
+        button = driver.find_element(By.CSS_SELECTOR, locator)
         button.click()
-        print(f"{locator_value} button clicked")
+        print(f"{locator} button clicked")
 
 
-def write_words(driver, word_input_info, word_to_write_info):
+def write_words(driver, word_input_info, word_to_write_info, next_key):
     """Writes words on the website."""
-    locator_type = word_input_info["get-with"]
-    locator_value = word_input_info["value"]
-    word_input = driver.find_element(get_locator(locator_type), locator_value)
+    
+    locator = word_input_info["css-selector"]
 
-    locator_type = word_to_write_info["get-with"]
-    locator_value = word_to_write_info["value"]
+    word_input = driver.find_element(By.CSS_SELECTOR, locator)
+
+    locator = word_to_write_info["css-selector"]
 
     while True:
         try:
-            word = driver.find_element(get_locator(locator_type), locator_value).text
+            word = driver.find_element(By.CSS_SELECTOR, locator).text
             word_input.send_keys(word)
             print(word)
-            word_input.send_keys(" ")
-        except:
+            word_input.send_keys(next_key)
+        
+        except NoSuchElementException:
             break
+
 
 def print_help():
     print("Usage: python main.py [website]")
@@ -85,6 +77,7 @@ def main():
     website_data = load_website_data(website)
 
     url = website_data["url"]
+    next_key = website_data["next-key"]
     buttons_to_click = website_data["buttons-to-click"]
     word_input_info = website_data["word-input"]
     word_to_write_info = website_data["word-to-write"]
@@ -93,10 +86,11 @@ def main():
     chrome_options.add_experimental_option("detach", True)
     driver = webdriver.Chrome(options = chrome_options)
     driver.get(url)
+    
 
     click_buttons(driver, buttons_to_click)
     time.sleep(5)
-    write_words(driver, word_input_info, word_to_write_info)
+    write_words(driver, word_input_info, word_to_write_info, next_key)
 
 
 if __name__ == "__main__":

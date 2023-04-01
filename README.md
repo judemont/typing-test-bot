@@ -37,20 +37,17 @@ To add typing test website you :
     "buttons-to-click": //All the butons to click to start the test
     [
         {
-            "get-with": "id or class",
-            "value": "The id or the class of the buton"
+            "css-selector": "The css selector of the button. Example: '#acoolid'" 
         }
         
     ],
     "word-input": //The input or the bot must write the words
     {
-        "get-with": "id or class",
-        "value": "The id or the class of the input"
+        "css-selector": "The css selector of the button. Example: '.acoolclass'" 
     },
     "word-to-write": //The word that the bot should write
     {
-        "get-with": "id or class", 
-        "value": "The id or the class of the input"
+        "css-selector": "The css selector of the button. Example: '.acoolclass'" 
     }
 }
 ```
