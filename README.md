@@ -1,4 +1,4 @@
-# Typing tests bot
+# Typing test bot
 A typing bot for different typing test websites.
 <br>
 He writes at more than 400 words per minute !
