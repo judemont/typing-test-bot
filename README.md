@@ -7,14 +7,21 @@ He writes at more than 400 words per minute !
 
 ## Avalaible typing tests :
 - [10fastfingers](https://10fastfingers.com)
+
 ## Usage :
+ If you are running linux replace `python3` with `python`.
+
+Download and install selenium :
 ```bash
-typing-bot [website]
+sudo apt install python-selenium
+```
+```bash
+python main.py [website]
 ```
 `--help or -h to print the help`
 ### Example :
 ```bash
-typing-bot 10fastfingers
+python main.py 10fastfingers
 ```
 ## Contribute :
 ### Add typing test website :
