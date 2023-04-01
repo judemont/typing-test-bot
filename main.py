@@ -7,7 +7,7 @@ import json
 import os
 import sys
 
-AVALAIBLES_WEBSITES = ["10fastfingers", "typing"]
+AVALAIBLES_WEBSITES = ["10fastfingers", "typing.com"]
 
 
 def load_website_data(website):
