@@ -46,7 +46,7 @@ To add typing test website you :
     {
         "css-selector": "The css selector of the input. Example: '.acoolclass'" 
     },
-    "word-to-write": //The word that the bot should write
+    "to-write": //The word that the bot should write
     {
         "css-selector": "The css selector of the element. Example: '.acoolclass'" 
     }, 
