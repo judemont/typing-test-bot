@@ -30,7 +30,7 @@ python main.py 10fastfingers
 To add typing test website you :
 - Creat a new json file in the `typing-test-websites` folder. 
 - (The file name must be the name of the test.)
-- You complete the file with like that : 
+- You complete the file like that : 
 
 ```jsonc
 {
