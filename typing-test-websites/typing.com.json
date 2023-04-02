@@ -3,17 +3,17 @@
     "buttons-to-click": 
     [
         {
-            "css-selector": ".js-continue-button"  
+            "xpath": "/html/body/div[2]/div/main/div/div[1]/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/button"  
         }
         
     ],
     "input": 
     {
-        "css-selector": "body"
+        "xpath": "//body"
     },
     "to-write":
     {
-        "css-selector": ".is-active"
+        "xpath": "//div[@class='letter letter--basic screenBasic-letter     is-active']"
     },
     "next-key": ""
     

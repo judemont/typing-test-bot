@@ -2,12 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.action_chains import ActionChains
 import time
 import json
 import os
 import sys
 
-AVAILABLES_WEBSITES = ["10fastfingers", "typing.com"]
+AVAILABLES_WEBSITES = ["10fastfingers", "typing.com", "speedtypingonline"]
 
 
 def load_website_data(website):
@@ -26,29 +27,33 @@ def click_buttons(driver, buttons_to_click):
     """Clicks the buttons specified in the buttons_to_click list."""
     for button_info in buttons_to_click:
         
-        locator = button_info["css-selector"]
-        button = driver.find_element(By.CSS_SELECTOR, locator)
-        button.click()
-        print(f"{locator} button clicked")
+        locator = button_info["xpath"]
+        button = driver.find_element(By.XPATH, locator)
+        actions = ActionChains(driver)
+        actions.move_to_element(button).click().perform()
+      
+        print(f"{locator} clicked")
 
 
 def write_words(driver, word_input_info, word_to_write_info, next_key):
     """Writes words on the website."""
     
-    locator = word_input_info["css-selector"]
+    locator = word_input_info["xpath"]
+    time.sleep(1)
+    word_input = driver.find_element(By.XPATH, locator)
 
-    word_input = driver.find_element(By.CSS_SELECTOR, locator)
-
-    locator = word_to_write_info["css-selector"]
+    locator = word_to_write_info["xpath"]
 
     while True:
         try:
-            word = driver.find_element(By.CSS_SELECTOR, locator).text
+            
+            word = driver.find_element(By.XPATH, locator).text
             word_input.send_keys(word)
             print(word)
             word_input.send_keys(next_key)
+            
         
-        except NoSuchElementException:
+        except NoSuchElementException as error:
             break
 
 
@@ -88,9 +93,8 @@ def main():
     driver = webdriver.Chrome(options = chrome_options)
     driver.get(url)
     
-
     click_buttons(driver, buttons_to_click)
-    time.sleep(5)
+    time.sleep(1)
     write_words(driver, word_input_info, word_to_write_info, next_key)
 
 

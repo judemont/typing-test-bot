@@ -38,17 +38,17 @@ To add typing test website you :
     "buttons-to-click": //All the butons to click to start the test
     [
         {
-            "css-selector": "The css selector of the button. Example: '#acoolid'" 
+            "xpath": "The xpath of the button or the element." 
         }
         
     ],
     "input": //The input or the bot must write the words or the letter. If there is no input you can use 'body' for value.
     {
-        "css-selector": "The css selector of the input. Example: '.acoolclass'" 
+        "css-selector": "The xpath of the input.'" 
     },
     "to-write": //The word that the bot should write
     {
-        "css-selector": "The css selector of the element. Example: '.acoolclass'" 
+        "css-selector": "The xpath of the element.'" 
     }, 
     "next-key": "The next key to press after each words or letters. Example: ' ' or '\n'"
 

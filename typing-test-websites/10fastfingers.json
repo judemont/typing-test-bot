@@ -3,17 +3,17 @@
     "buttons-to-click": 
     [
         {
-            "css-selector": "#CybotCookiebotDialogBodyButtonDecline"
+            "xpath": "/html/body/div[1]/div/div[4]/div[1]/div[2]/button[1]"
         }
         
     ],
     "input": 
     {
-        "css-selector": "#inputfield"
+        "xpath": "//*[@id='inputfield']"
     },
     "to-write":
     {
-        "css-selector": ".highlight"
+        "xpath": "//span[@class='highlight']"
     },
     "next-key": " "
 

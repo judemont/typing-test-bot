@@ -1,0 +1,18 @@
+{
+    "url": "https://www.speedtypingonline.com/typing-test",
+    "buttons-to-click": 
+    [
+        {
+            "xpath":"//div[@id='blockDivContainer']"
+        }
+    ],
+    "input": 
+    {
+        "xpath": "//*[@id='blockDivContainer']"
+    },
+    "to-write":
+    {
+        "xpath": "//*[@class='blockLines']/span[@class='nxtLetter']"
+    },
+    "next-key": ""
+}
