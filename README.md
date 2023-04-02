@@ -9,6 +9,7 @@ He writes at more than 400 words per minute !
 - [10fastfingers](https://10fastfingers.com)
 - [typing.com](https://typing.com)
 - [speedtypingonline](https://speedtypingonline.com)
+- [keyhero](https://keyhero.com)
 
 ## Usage :
  If you are running linux replace `python3` with `python`.

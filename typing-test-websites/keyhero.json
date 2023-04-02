@@ -1,0 +1,23 @@
+{
+    "url": "https://www.keyhero.com/free-typing-test/",
+    "buttons-to-click": 
+    [
+        {
+            "xpath": "/html/body/div[3]/div[3]/div/div/div[1]/div[2]/button[1]"
+        }
+        
+    ],
+    "input": 
+    {
+        "xpath": "/html/body/div[3]/div[3]/div/div/div[1]/div[2]/form/input"
+    },
+    "to-write":
+    {
+        "xpath": "//span[@class='quote-current']"
+    },
+    "next-key": " "
+
+    
+
+
+}
