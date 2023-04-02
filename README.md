@@ -1,4 +1,4 @@
-# Typing tests bot
+# Typing test bot
 A typing bot for different typing test websites.
 <br>
 He writes at more than 400 words per minute !
@@ -12,10 +12,10 @@ He writes at more than 400 words per minute !
 ## Usage :
 clone the repo :
 ```bash
-git clone https://github.com/judemont/typing-bot
-cd typing-bot
+git clone https://github.com/judemont/typing-test-bot
+cd typing-test-bot
 ```
- If you are running linux replace `python3` with `python`.
+ If you are running linux replace `python` with `python3`.
 
 Download and install selenium :
 ```bash
