@@ -17,7 +17,7 @@ Download and install selenium :
 sudo apt install python-selenium
 ```
 ```bash
-python main.py [website]
+python main.py [name of the typing test]
 ```
 `--help or -h to print the help`
 ### Example :

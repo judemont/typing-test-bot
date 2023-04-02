@@ -53,7 +53,7 @@ def write_words(driver, word_input_info, word_to_write_info, next_key):
 
 
 def print_help():
-    print("Usage: python main.py [website]")
+    print("Usage: python main.py [name of the typing test]")
     print("--help or -h : print this help")
     print("Available typing tests : " + str(AVAILABLES_WEBSITES))
     exit()
