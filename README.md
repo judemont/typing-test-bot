@@ -54,5 +54,5 @@ To add typing test website you :
 
 }
 ```
-- You add the website name to `AVALAIBLE_WEBSITES` in `main.py`.
+- You add the website name to `AVAILABLES_WEBSITES` in `main.py`.
 - You add the website to the Avalaible typing tests section of the `Readme.md` file

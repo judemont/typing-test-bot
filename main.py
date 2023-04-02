@@ -7,7 +7,7 @@ import json
 import os
 import sys
 
-AVALAIBLES_WEBSITES = ["10fastfingers", "typing.com"]
+AVAILABLES_WEBSITES = ["10fastfingers", "typing.com"]
 
 
 def load_website_data(website):
@@ -55,6 +55,7 @@ def write_words(driver, word_input_info, word_to_write_info, next_key):
 def print_help():
     print("Usage: python main.py [website]")
     print("--help or -h : print this help")
+    print("Available typing tests : " + str(AVAILABLES_WEBSITES))
     exit()
 def verify_arguments(args):
     if len(args) <= 0:
@@ -64,8 +65,8 @@ def verify_arguments(args):
             print_help()
         else:
             raise ValueError("Invalid argument : %s \nuse --help to get help" % args[0])
-    elif args[0] not in AVALAIBLES_WEBSITES:
-        raise ValueError("The typing test %s is not available \nAvalaible typing tests: %s" %(args[0], AVALAIBLES_WEBSITES))
+    elif args[0] not in AVAILABLES_WEBSITES:
+        raise ValueError("The typing test %s is not available \nAvailable typing tests: %s" %(args[0], AVAILABLES_WEBSITES))
     
 
 def main():
