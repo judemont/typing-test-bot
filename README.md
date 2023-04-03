@@ -46,7 +46,7 @@ To add typing test website you :
     ],
     "input": //The input or the bot must write the words or the letter. If there is no input you can use 'body' for value.
     {
-        "css-selector": "The xpath of the input.'" 
+        "xpath": "The xpath of the input.'" 
     },
     "xpath": //The word that the bot should write
     {
