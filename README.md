@@ -48,9 +48,9 @@ To add typing test website you :
     {
         "css-selector": "The xpath of the input.'" 
     },
-    "to-write": //The word that the bot should write
+    "xpath": //The word that the bot should write
     {
-        "css-selector": "The xpath of the element.'" 
+        "xpath": "The xpath of the element.'" 
     }, 
     "next-key": "The next key to press after each words or letters. Example: ' ' or '\n'"
 
