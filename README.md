@@ -48,7 +48,7 @@ To add typing test website you :
     {
         "xpath": "The xpath of the input.'" 
     },
-    "xpath": //The word that the bot should write
+    "to-write": //The word that the bot should write
     {
         "xpath": "The xpath of the element.'" 
     }, 
